@@ -15,7 +15,6 @@
     "json-refs": "^3.0.15",
     "node-watch": "^0.6.4",
     "open": "^7.0.4",
-    "path": "^0.12.7",
     "socket.io": "^2.3.0",
     "swagger-editor-dist": "^3.11.1"
   },
