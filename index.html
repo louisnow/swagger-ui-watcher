@@ -88,7 +88,7 @@
       window.editor = editor;
 
       socket.on('updateSpec', function(data) {
-        console.log(data);
+        console.log(`${new Date()} Updated Spec`);
         var scrollElement = document.getElementsByClassName('Pane2')[0];
         var tempScrollTop = scrollElement ? scrollElement.scrollTop : 0;
         swaggerEditor.style.display = 'block';
@@ -104,7 +104,7 @@
       socket.on('showError', function(data) {
         errorsContainer.style.display = 'block';
         swaggerEditor.style.display = 'none';
-        console.log(data);
+        console.error(data);
         errors.innerHTML = data;
       });
       socket.emit('swaggerReady', {});
